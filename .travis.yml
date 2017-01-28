@@ -11,3 +11,7 @@ go:
 matrix:
     allow_failures:
         - go: tip
+before_install:
+  - go get github.com/mattn/goveralls
+script:
+  - $HOME/gopath/bin/goveralls
